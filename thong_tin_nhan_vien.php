@@ -162,7 +162,7 @@ body,td,th {
     </tr>
     <tr valign="baseline">
       <td nowrap="nowrap" align="right">&nbsp;</td>
-      <td><input type="submit" value="Insert record" /></td>
+      <td><input type="submit" value="Thêm mới" /></td>
     </tr>
   </table>
   <input type="hidden" name="MM_insert" value="form1" />

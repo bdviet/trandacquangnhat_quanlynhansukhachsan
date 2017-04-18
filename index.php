@@ -74,7 +74,7 @@ if ($title == "") $title = 'Danh sách nhân viên';
 <div class="top_space"></div>
 <div class="wrapper">
 <table align="center" width="980" border="0" cellspacing="0" cellpadding="0">
-  <tr><td colspan="2"><img width="978" src="images/banner.png" /></td></tr>
+  <tr><td colspan="2"><img width="978" src="images/banner2.png" /></td></tr>
   <tr>
     <td class="row4" width="170" valign="top"><table width="100%" border="0" cellspacing="1" cellpadding="10">
       <tr>
@@ -142,16 +142,16 @@ if ($title == "") $title = 'Danh sách nhân viên';
   <tr>
     <td colspan="2"><table class="footer" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td>CÔNG TY CỔ PHẦN XNK & ĐẦU TƯ MILAN VIỆT NAM</td>
+        <td>KHÁCH SẠN MONDIAL HUẾ</td>
       </tr>
       <tr>
-        <td>234 Nguyễn Trãi - Thanh Xuân - Hà Nội</td>
+        <td>17 Nguyễn Huệ, Vĩnh Ninh, Tp. Huế, Thừa Thiên Huế</td>
       </tr>
       <tr>
-        <td>Website: http://milanplaza.com.vn</td>
+        <td>Website: http://www.mondialhotel.com.vn</td>
       </tr>
       <tr>
-        <td>COPYRIGHT 2011 BY Đinh Ngọc Dũng</td>
+        <td>Chuyên đề tốt nghiệp: Trần Đắc Quang Nhật -  2017</td>
       </tr>
     </table></td>
   </tr>

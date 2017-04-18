@@ -308,7 +308,7 @@ do {
       <td>&nbsp;</td>
     </tr>
     <tr valign="baseline">
-      <td colspan="4" align="center" nowrap="nowrap"><input type="submit" value="Insert record" /></td>
+      <td colspan="4" align="center" nowrap="nowrap"><input type="submit" value="Thêm mới" /></td>
     </tr>
   </table>
   <input type="hidden" name="MM_insert" value="form1" />

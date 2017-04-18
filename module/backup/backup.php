@@ -9,7 +9,7 @@ define('TIME_LIMIT', 600);
 // It is to limit the number of memory pozhiraemoy server stack with a very large tables
 define('LIMIT', 1);
 // mysql server
-define('DBHOST', 'localhost:3306');
+define('DBHOST', 'localhost');
 // Databases, if the server does not allow browse the list of databases,
 // and nothing shows up after authorization. List the names with a comma 
 define('DBNAMES', 'quanlynhansu');
@@ -284,7 +284,7 @@ class dumper {
                     		if ($NumericColumn[$k])
                     		    $row[$k] = isset($row[$k]) ? $row[$k] : "NULL";
                     		else
-                    			$row[$k] = isset($row[$k]) ? "'" . mysql_escape_string($row[$k]) . "'" : "NULL";
+                    			$row[$k] = isset($row[$k]) ? "'" . mysql_real_escape_string($row[$k]) . "'" : "NULL";
                     	}
 
     					$this->fn_write($fp, ($i == 1 ? "" : ",") . "\n(" . implode(", ", $row) . ")");
@@ -774,7 +774,7 @@ fieldset {
 <TD ID=Header HEIGHT=20 BGCOLOR=#7A96DF STYLE="font-size: 12px; color: white; font-family: tahoma, arial;
 padding-left: 5px; FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#333333,endColorStr=#FBFBFD)"
 TITLE='&copy; 2007 by Huehacking.info'>
-<center><B><A HREF=http://Huehacking.info STYLE="color: white; text-decoration: none;">&#272;&#259;ng nh&#7853;p phpMyadmin</A></B><IMG ID=GS WIDTH=1 HEIGHT=1 STYLE="visibility: hidden;"> <b><font color='#FFFFFF'> |  Localhost:3306 </font></b></TD></center>
+<center><B><A HREF=http://Huehacking.info STYLE="color: white; text-decoration: none;">&#272;&#259;ng nh&#7853;p phpMyadmin</A></B><IMG ID=GS WIDTH=1 HEIGHT=1 STYLE="visibility: hidden;"> <b><font color='#FFFFFF'> |  Localhost:80 </font></b></TD></center>
 </TR>
 <TR>
 <FORM NAME=skb METHOD=POST ACTION="{$_SERVER['PHP_SELF']}">
@@ -852,7 +852,7 @@ Ph&#7909;c h&#7891;i / Ch&#7885;n c&#417; s&#7903; d&#7919; li&#7879;u mu&#7889;
 </TR>
 </TABLE>
 </FIELDSET>
-</SPAN><center>&copy; 2007 by Huehacking.info | YahooID: <b>hannamnhat</b></center>
+</SPAN><center>&copy; 2017 by Trần Đắc Quang Nhật | FacebookID: <b>Trần Quang Nhật</b></center>
 <SCRIPT>
 document.skb.action[{$SK->SET['last_action']}].checked = 1;
 </SCRIPT>
@@ -875,7 +875,7 @@ border-right: 1px solid #AAAAAA"><TR><TD HEIGHT=12></TD></TR></TABLE></TD></TR><
 STYLE="FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#CCFFCC,endColorStr=#00AA00);
 border-right: 1px solid #AAAAAA"><TR><TD HEIGHT=12></TD></TR></TABLE></TD>
 </TR></TABLE></TD></TR></TABLE>
-</FIELDSET><center>&copy; 2007 by Huehacking.info | YahooID: <b>hannamnhat</b></center>
+</FIELDSET><center>&copy; 2017 by Trần Đắc Quang Nhật | FacebookID: <b>Trần Quang Nhật</b></center>
 <SCRIPT>
 var WidthLocked = false;
 function s(st, so){
@@ -922,15 +922,16 @@ return <<<HTML
 <TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=2>
 <TR>
 <TD WIDTH=41%>Username:</TD>
-<TD WIDTH=59%><INPUT NAME=login value="root" TYPE=text CLASS=text></TD>
+<TD WIDTH=59%><INPUT NAME=login value="root" TYPE=text CLASS=text PLACEHODEL ="NHÂP TÊN TÀI KHOẢN"></TD>
 </TR>
 <TR>
 <TD>Password:</TD>
-<TD><INPUT NAME=pass value="vertrigo" TYPE=password CLASS=text></TD>
+<TD><INPUT NAME=pass value="" TYPE=password CLASS=text PLACEHODEL ="NHÂP MẬT KHẨU"></TD>
+<?php debug($error); exit();
 </TR>
 </TABLE>
 </FIELDSET>
-</SPAN><center>Phi&ecirc;n b&#7843;n vi&#7879;t h&oacute;a t&#7915; m&atilde; ngu&#7891;n Sypex Dumper Lite</b></br>&copy; 2007 by Huehacking.info | YahooID: <b>hannamnhat</center>
+</SPAN>
 <SCRIPT>
 document.getElementById('sjs').innerHTML = '+';
 document.getElementById('body').style.display = '';
@@ -968,16 +969,15 @@ HTML;
 
 function tpl_backup_index(){
 return <<<HTML
-<TITLE>Database BackUp and Restore | &copy; 2007 by H&agrave;n Nam Nh&#7853;t (YahooID: hannamnhat)</TITLE>
+<TITLE>Database BackUp and Restore | &copy; 2017 by Trần Quang Nhật (FacebookID: Trần Quang Nhật)</TITLE>
 <CENTER>
 <H1><br>
 /*====================================*\<br>
 || ################################## ||<br>
 || # MYSQL LOGIN                  	# ||<br>
 || # ------------------------------	# ||<br>
-|| # Code by H&agrave;n Nam Nh&#7853;t			# ||<br>
-|| # Y!m : HanNamNhat				# ||<br>
-|| # website:www.huehacking.info	# ||<br>
+|| # Code by Trần Quang Nhật		# ||<br>
+|| # Fb: Trần Quang Nhật			# ||<br>
 || ################################## ||<br>
 \*====================================*/</H1>
 </CENTER>
